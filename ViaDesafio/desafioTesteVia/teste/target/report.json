@@ -1,0 +1,95 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-12T23:15:08.418Z",
+        "line": 8,
+        "name": "Deve validar produto no carrinho com sucesso",
+        "description": "",
+        "id": "produto-no-carrinho;deve-validar-produto-no-carrinho-com-sucesso",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23690355000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que eu esteja no site \"http://lojaebac.ebaconline.art.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://lojaebac.ebaconline.art.br/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "steps.ValidarCarrinho.que_eu_esteja_no_site(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10072576100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "escolher produto",
+            "match": {
+              "location": "steps.ValidarCarrinho.escolher_produto()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36876109200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "adicionar no carrinho",
+            "match": {
+              "location": "steps.ValidarCarrinho.adicionar_no_carrinho()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20344163700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "adicionar mais  produto no carrinho",
+            "match": {
+              "location": "steps.ValidarCarrinho.adicionar_mais_produto_no_carrinho()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2113120800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "valido produtos no carrinho",
+            "match": {
+              "location": "steps.ValidarCarrinho.valido_produtos_no_carrinho()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@adicionarCarrinho"
+          }
+        ]
+      }
+    ],
+    "name": "Produto no carrinho",
+    "description": " Eu como usuario quero acessar o site e adicionar produtos no carrinho ",
+    "id": "produto-no-carrinho",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/validarCarrinho.feature",
+    "tags": []
+  }
+]
